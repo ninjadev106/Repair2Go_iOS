@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120E25183EC6B86512E6C119 /* Pods_Repair2Go.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FF7650E5680FCAFB332F9F /* Pods_Repair2Go.framework */; };
+		65BA749E312E922AB038FEBF /* Pods_Repair2GoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059F5549761A8B4C75128CCF /* Pods_Repair2GoTests.framework */; };
+		7516E7A121D049950053048A /* SideMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A021D049950053048A /* SideMenuTVC.swift */; };
+		7516E7A321D050C50053048A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A221D050C50053048A /* MenuCell.swift */; };
+		7516E7A621D07E2A0053048A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A521D07E2A0053048A /* UIColor+Extension.swift */; };
+		7516E7A821D08D4C0053048A /* TestOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A721D08D4C0053048A /* TestOptionsVC.swift */; };
 		75B9625A21CEB06E0037400F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9625921CEB06E0037400F /* AppDelegate.swift */; };
-		75B9625C21CEB06E0037400F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9625B21CEB06E0037400F /* ViewController.swift */; };
+		75B9625C21CEB06E0037400F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9625B21CEB06E0037400F /* HomeVC.swift */; };
 		75B9625F21CEB06E0037400F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B9625D21CEB06E0037400F /* Main.storyboard */; };
 		75B9626121CEB06F0037400F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B9626021CEB06F0037400F /* Assets.xcassets */; };
 		75B9626421CEB06F0037400F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B9626221CEB06F0037400F /* LaunchScreen.storyboard */; };
 		75B9626F21CEB06F0037400F /* Repair2GoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9626E21CEB06F0037400F /* Repair2GoTests.swift */; };
 		75B9627A21CEB06F0037400F /* Repair2GoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9627921CEB06F0037400F /* Repair2GoUITests.swift */; };
+		75B9628921CEC06B0037400F /* launchlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B9628821CEC06B0037400F /* launchlogo.png */; };
+		7A118DDC5FBFB02CA20E918F /* Pods_Repair2GoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F12163E4586985A58631C /* Pods_Repair2GoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		059F5549761A8B4C75128CCF /* Pods_Repair2GoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repair2GoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		251972218355C6E5FAFF3DE8 /* Pods-Repair2GoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoTests/Pods-Repair2GoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		525AE135BD74F17B30A81C62 /* Pods-Repair2Go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2Go.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2Go/Pods-Repair2Go.debug.xcconfig"; sourceTree = "<group>"; };
+		5C76EA238545F1DCD46D7B25 /* Pods-Repair2GoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoTests/Pods-Repair2GoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EEB6BC054BF928ED0F6133F /* Pods-Repair2GoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoUITests/Pods-Repair2GoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7516E7A021D049950053048A /* SideMenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTVC.swift; sourceTree = "<group>"; };
+		7516E7A221D050C50053048A /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		7516E7A521D07E2A0053048A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		7516E7A721D08D4C0053048A /* TestOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOptionsVC.swift; sourceTree = "<group>"; };
 		75B9625621CEB06E0037400F /* Repair2Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repair2Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B9625921CEB06E0037400F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75B9625B21CEB06E0037400F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75B9625B21CEB06E0037400F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		75B9625E21CEB06E0037400F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75B9626021CEB06F0037400F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B9626321CEB06F0037400F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +64,11 @@
 		75B9627521CEB06F0037400F /* Repair2GoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Repair2GoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B9627921CEB06F0037400F /* Repair2GoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repair2GoUITests.swift; sourceTree = "<group>"; };
 		75B9627B21CEB06F0037400F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B9628821CEC06B0037400F /* launchlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchlogo.png; sourceTree = "<group>"; };
+		841F12163E4586985A58631C /* Pods_Repair2GoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repair2GoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FF7650E5680FCAFB332F9F /* Pods_Repair2Go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repair2Go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C825A00C225B69D6C5B9CD8C /* Pods-Repair2GoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoUITests/Pods-Repair2GoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0FC1BFE67CC7DAFD0AA7C54 /* Pods-Repair2Go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2Go.release.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2Go/Pods-Repair2Go.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				120E25183EC6B86512E6C119 /* Pods_Repair2Go.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BA749E312E922AB038FEBF /* Pods_Repair2GoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A118DDC5FBFB02CA20E918F /* Pods_Repair2GoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070AEABAB495DC0C88826098 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3FF7650E5680FCAFB332F9F /* Pods_Repair2Go.framework */,
+				059F5549761A8B4C75128CCF /* Pods_Repair2GoTests.framework */,
+				841F12163E4586985A58631C /* Pods_Repair2GoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EE2F8FE57F73EC2C7A2E771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				525AE135BD74F17B30A81C62 /* Pods-Repair2Go.debug.xcconfig */,
+				E0FC1BFE67CC7DAFD0AA7C54 /* Pods-Repair2Go.release.xcconfig */,
+				251972218355C6E5FAFF3DE8 /* Pods-Repair2GoTests.debug.xcconfig */,
+				5C76EA238545F1DCD46D7B25 /* Pods-Repair2GoTests.release.xcconfig */,
+				C825A00C225B69D6C5B9CD8C /* Pods-Repair2GoUITests.debug.xcconfig */,
+				6EEB6BC054BF928ED0F6133F /* Pods-Repair2GoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7516E7A421D07E140053048A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7516E7A521D07E2A0053048A /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		75B9624D21CEB06E0037400F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +137,8 @@
 				75B9626D21CEB06F0037400F /* Repair2GoTests */,
 				75B9627821CEB06F0037400F /* Repair2GoUITests */,
 				75B9625721CEB06E0037400F /* Products */,
+				3EE2F8FE57F73EC2C7A2E771 /* Pods */,
+				070AEABAB495DC0C88826098 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +155,13 @@
 		75B9625821CEB06E0037400F /* Repair2Go */ = {
 			isa = PBXGroup;
 			children = (
+				7516E7A421D07E140053048A /* Extension */,
+				75B9628721CEB8740037400F /* Resources */,
 				75B9625921CEB06E0037400F /* AppDelegate.swift */,
-				75B9625B21CEB06E0037400F /* ViewController.swift */,
+				75B9625B21CEB06E0037400F /* HomeVC.swift */,
+				7516E7A021D049950053048A /* SideMenuTVC.swift */,
+				7516E7A221D050C50053048A /* MenuCell.swift */,
+				7516E7A721D08D4C0053048A /* TestOptionsVC.swift */,
 				75B9625D21CEB06E0037400F /* Main.storyboard */,
 				75B9626021CEB06F0037400F /* Assets.xcassets */,
 				75B9626221CEB06F0037400F /* LaunchScreen.storyboard */,
@@ -125,6 +188,14 @@
 			path = Repair2GoUITests;
 			sourceTree = "<group>";
 		};
+		75B9628721CEB8740037400F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75B9628821CEC06B0037400F /* launchlogo.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B9627E21CEB06F0037400F /* Build configuration list for PBXNativeTarget "Repair2Go" */;
 			buildPhases = (
+				56AB88F7B73C7E3C7BF02E89 /* [CP] Check Pods Manifest.lock */,
 				75B9625221CEB06E0037400F /* Sources */,
 				75B9625321CEB06E0037400F /* Frameworks */,
 				75B9625421CEB06E0037400F /* Resources */,
+				73F618A37363107B5A8EE1EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B9628121CEB06F0037400F /* Build configuration list for PBXNativeTarget "Repair2GoTests" */;
 			buildPhases = (
+				CE81DC3EC642BB9DD25C3D6F /* [CP] Check Pods Manifest.lock */,
 				75B9626621CEB06F0037400F /* Sources */,
 				75B9626721CEB06F0037400F /* Frameworks */,
 				75B9626821CEB06F0037400F /* Resources */,
@@ -167,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B9628421CEB06F0037400F /* Build configuration list for PBXNativeTarget "Repair2GoUITests" */;
 			buildPhases = (
+				203DC7DE562033A90E3B2EC8 /* [CP] Check Pods Manifest.lock */,
 				75B9627121CEB06F0037400F /* Sources */,
 				75B9627221CEB06F0037400F /* Frameworks */,
 				75B9627321CEB06F0037400F /* Resources */,
@@ -230,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B9626421CEB06F0037400F /* LaunchScreen.storyboard in Resources */,
+				75B9628921CEC06B0037400F /* launchlogo.png in Resources */,
 				75B9626121CEB06F0037400F /* Assets.xcassets in Resources */,
 				75B9625F21CEB06E0037400F /* Main.storyboard in Resources */,
 			);
@@ -251,13 +327,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		203DC7DE562033A90E3B2EC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repair2GoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56AB88F7B73C7E3C7BF02E89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repair2Go-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F618A37363107B5A8EE1EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Repair2Go/Pods-Repair2Go-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Repair2Go/Pods-Repair2Go-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE81DC3EC642BB9DD25C3D6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repair2GoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75B9625221CEB06E0037400F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B9625C21CEB06E0037400F /* ViewController.swift in Sources */,
+				75B9625C21CEB06E0037400F /* HomeVC.swift in Sources */,
 				75B9625A21CEB06E0037400F /* AppDelegate.swift in Sources */,
+				7516E7A321D050C50053048A /* MenuCell.swift in Sources */,
+				7516E7A821D08D4C0053048A /* TestOptionsVC.swift in Sources */,
+				7516E7A121D049950053048A /* SideMenuTVC.swift in Sources */,
+				7516E7A621D07E2A0053048A /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,15 +585,18 @@
 		};
 		75B9627F21CEB06F0037400F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 525AE135BD74F17B30A81C62 /* Pods-Repair2Go.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AF8V6BN5YT;
 				INFOPLIST_FILE = Repair2Go/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Repair2Go;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rainsic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -447,15 +605,18 @@
 		};
 		75B9628021CEB06F0037400F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FC1BFE67CC7DAFD0AA7C54 /* Pods-Repair2Go.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AF8V6BN5YT;
 				INFOPLIST_FILE = Repair2Go/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Repair2Go;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rainsic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -464,6 +625,7 @@
 		};
 		75B9628221CEB06F0037400F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251972218355C6E5FAFF3DE8 /* Pods-Repair2GoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +646,7 @@
 		};
 		75B9628321CEB06F0037400F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C76EA238545F1DCD46D7B25 /* Pods-Repair2GoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +667,7 @@
 		};
 		75B9628521CEB06F0037400F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C825A00C225B69D6C5B9CD8C /* Pods-Repair2GoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +687,7 @@
 		};
 		75B9628621CEB06F0037400F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EEB6BC054BF928ED0F6133F /* Pods-Repair2GoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
