@@ -75,6 +75,9 @@
                                         <state key="normal" title="Back">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onTappedBtnBack:" destination="Nbg-mq-waS" eventType="touchUpInside" id="XoQ-kd-Xin"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,26 +91,41 @@
                                 <rect key="frame" x="166" y="291" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Touch"/>
+                                <connections>
+                                    <action selector="onTappedBtnTouch:" destination="Nbg-mq-waS" eventType="touchUpInside" id="dXP-sU-BuQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUZ-Ut-60h">
                                 <rect key="frame" x="172" y="403" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LCD"/>
+                                <connections>
+                                    <action selector="onTappedBtnLCD:" destination="Nbg-mq-waS" eventType="touchUpInside" id="kQB-EA-b3a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-aG-g9E">
                                 <rect key="frame" x="160" y="348" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="onTappedBtnCamera:" destination="Nbg-mq-waS" eventType="touchUpInside" id="Ih3-vr-onc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-Xv-ebY">
                                 <rect key="frame" x="172" y="457" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GPS"/>
+                                <connections>
+                                    <action selector="onTappedBtnGPS:" destination="Nbg-mq-waS" eventType="touchUpInside" id="HpZ-dg-eU2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecE-KF-wfV">
                                 <rect key="frame" x="146" y="239" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Microphone"/>
+                                <connections>
+                                    <action selector="onTappedBtnMicrophone:" destination="Nbg-mq-waS" eventType="touchUpInside" id="31X-vw-2lW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,6 +140,159 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkl-aZ-TeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="860" y="27"/>
+        </scene>
+        <!--CameraVC-->
+        <scene sceneID="V1l-by-2IH">
+            <objects>
+                <viewController storyboardIdentifier="CameraVC" id="VCf-Yk-5fn" customClass="CameraVC" customModule="Repair2Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ksw-dL-fOS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpm-Oj-ky1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dp-8j-cHs">
+                                <rect key="frame" x="16" y="40" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onTappedBtnBack:" destination="VCf-Yk-5fn" eventType="touchUpInside" id="glO-6j-rnW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8e-xx-Xso">
+                                <rect key="frame" x="132" y="518" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Camera"/>
+                                <connections>
+                                    <action selector="btnFlipCameraTapped:" destination="VCf-Yk-5fn" eventType="touchUpInside" id="SRX-uA-myV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Fr-nZ-CQN" firstAttribute="bottom" secondItem="Tpm-Oj-ky1" secondAttribute="bottom" id="314-PZ-EuO"/>
+                            <constraint firstItem="1Fr-nZ-CQN" firstAttribute="trailing" secondItem="Tpm-Oj-ky1" secondAttribute="trailing" id="Sxj-As-e5C"/>
+                            <constraint firstAttribute="top" secondItem="Tpm-Oj-ky1" secondAttribute="top" id="VdN-1C-1Nj"/>
+                            <constraint firstItem="Tpm-Oj-ky1" firstAttribute="leading" secondItem="1Fr-nZ-CQN" secondAttribute="leading" id="e6N-xX-eBe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Fr-nZ-CQN"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCamera" destination="l8e-xx-Xso" id="kSb-eH-c6P"/>
+                        <outlet property="cameraContainerView" destination="Tpm-Oj-ky1" id="GKn-BG-kaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVz-7X-2z6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1599.2" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gDE-Za-026">
+            <objects>
+                <viewController id="VaG-Dd-b5g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x29-5n-LL6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nJV-K1-Xir"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ws9-1K-mVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="794"/>
+        </scene>
+        <!--Touch TestVC-->
+        <scene sceneID="2xN-dd-G4H">
+            <objects>
+                <viewController storyboardIdentifier="TouchTestVC" id="FIX-JH-aDu" customClass="TouchTestVC" customModule="Repair2Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Idr-t8-yvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please touch the screen anywhere and see if the green squares appear." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-9I-ovJ">
+                                <rect key="frame" x="53" y="298" width="269" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rXc-hJ-KNa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6so-xY-CZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2313" y="27"/>
+        </scene>
+        <!--MicrophoneVC-->
+        <scene sceneID="fBM-Gf-Oi7">
+            <objects>
+                <viewController storyboardIdentifier="MicrophoneVC" id="8ls-ez-ZE8" customClass="MicrophoneVC" customModule="Repair2Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="obJ-pU-Ffo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hm-Cl-FlU">
+                                <rect key="frame" x="172" y="318" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="play"/>
+                                <connections>
+                                    <action selector="onTappedBtnPlay:" destination="8ls-ez-ZE8" eventType="touchUpInside" id="Ozp-MC-BUC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0Z-Wq-gCY">
+                                <rect key="frame" x="165" y="400" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="record"/>
+                                <connections>
+                                    <action selector="onTappedBtnRecord:" destination="8ls-ez-ZE8" eventType="touchUpInside" id="OMW-nO-wAv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVA-ha-GfN">
+                                <rect key="frame" x="119" y="240" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Microphone"/>
+                                <connections>
+                                    <action selector="onTappedBtnChangeMicrophone:" destination="8ls-ez-ZE8" eventType="touchUpInside" id="mgD-kF-9UV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cst-Zg-b29">
+                                <rect key="frame" x="84" y="198" width="222" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="k5c-Ik-kuk"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblMicrophone" destination="Cst-Zg-b29" id="kCT-QP-ZFN"/>
+                        <outlet property="recordButton" destination="v0Z-Wq-gCY" id="SKD-ns-uEl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sI-V6-ZGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3021.5999999999999" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b2h-u6-oUa">
+            <objects>
+                <viewController id="mcL-Gf-OZQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gv2-M8-DVL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IBP-kC-sgd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrJ-3W-OlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530" y="794"/>
         </scene>
         <!--Side MenuTVC-->
         <scene sceneID="Wzf-mN-vaw">

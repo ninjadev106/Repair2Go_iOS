@@ -7,6 +7,7 @@ target 'Repair2Go' do
 
   # Pods for Repair2Go
   pod 'SideMenu'
+  pod 'SnapKit'
 
   target 'Repair2GoTests' do
     inherit! :search_paths

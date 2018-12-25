@@ -12,7 +12,12 @@
 		7516E7A121D049950053048A /* SideMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A021D049950053048A /* SideMenuTVC.swift */; };
 		7516E7A321D050C50053048A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A221D050C50053048A /* MenuCell.swift */; };
 		7516E7A621D07E2A0053048A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A521D07E2A0053048A /* UIColor+Extension.swift */; };
-		7516E7A821D08D4C0053048A /* TestOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A721D08D4C0053048A /* TestOptionsVC.swift */; };
+		7516E7A821D08D4C0053048A /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A721D08D4C0053048A /* CameraVC.swift */; };
+		7546E3BA21D16C4400785A06 /* TestOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7546E3B921D16C4400785A06 /* TestOptionsVC.swift */; };
+		7546E3BC21D1733C00785A06 /* TouchTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7546E3BB21D1733C00785A06 /* TouchTestVC.swift */; };
+		75A546C121D19BCC002EC26A /* LCDTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A546C021D19BCC002EC26A /* LCDTestVC.swift */; };
+		75A546C321D19BE2002EC26A /* GPSTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A546C221D19BE2002EC26A /* GPSTestVC.swift */; };
+		75A546C521D19BFA002EC26A /* MicrophoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A546C421D19BFA002EC26A /* MicrophoneVC.swift */; };
 		75B9625A21CEB06E0037400F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9625921CEB06E0037400F /* AppDelegate.swift */; };
 		75B9625C21CEB06E0037400F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9625B21CEB06E0037400F /* HomeVC.swift */; };
 		75B9625F21CEB06E0037400F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B9625D21CEB06E0037400F /* Main.storyboard */; };
@@ -50,7 +55,12 @@
 		7516E7A021D049950053048A /* SideMenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTVC.swift; sourceTree = "<group>"; };
 		7516E7A221D050C50053048A /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		7516E7A521D07E2A0053048A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		7516E7A721D08D4C0053048A /* TestOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOptionsVC.swift; sourceTree = "<group>"; };
+		7516E7A721D08D4C0053048A /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		7546E3B921D16C4400785A06 /* TestOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOptionsVC.swift; sourceTree = "<group>"; };
+		7546E3BB21D1733C00785A06 /* TouchTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTestVC.swift; sourceTree = "<group>"; };
+		75A546C021D19BCC002EC26A /* LCDTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDTestVC.swift; sourceTree = "<group>"; };
+		75A546C221D19BE2002EC26A /* GPSTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSTestVC.swift; sourceTree = "<group>"; };
+		75A546C421D19BFA002EC26A /* MicrophoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneVC.swift; sourceTree = "<group>"; };
 		75B9625621CEB06E0037400F /* Repair2Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repair2Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B9625921CEB06E0037400F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B9625B21CEB06E0037400F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -161,7 +171,12 @@
 				75B9625B21CEB06E0037400F /* HomeVC.swift */,
 				7516E7A021D049950053048A /* SideMenuTVC.swift */,
 				7516E7A221D050C50053048A /* MenuCell.swift */,
-				7516E7A721D08D4C0053048A /* TestOptionsVC.swift */,
+				7546E3B921D16C4400785A06 /* TestOptionsVC.swift */,
+				7516E7A721D08D4C0053048A /* CameraVC.swift */,
+				7546E3BB21D1733C00785A06 /* TouchTestVC.swift */,
+				75A546C021D19BCC002EC26A /* LCDTestVC.swift */,
+				75A546C221D19BE2002EC26A /* GPSTestVC.swift */,
+				75A546C421D19BFA002EC26A /* MicrophoneVC.swift */,
 				75B9625D21CEB06E0037400F /* Main.storyboard */,
 				75B9626021CEB06F0037400F /* Assets.xcassets */,
 				75B9626221CEB06F0037400F /* LaunchScreen.storyboard */,
@@ -372,10 +387,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Repair2Go/Pods-Repair2Go-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,12 +424,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A546C521D19BFA002EC26A /* MicrophoneVC.swift in Sources */,
+				7546E3BC21D1733C00785A06 /* TouchTestVC.swift in Sources */,
 				75B9625C21CEB06E0037400F /* HomeVC.swift in Sources */,
 				75B9625A21CEB06E0037400F /* AppDelegate.swift in Sources */,
 				7516E7A321D050C50053048A /* MenuCell.swift in Sources */,
-				7516E7A821D08D4C0053048A /* TestOptionsVC.swift in Sources */,
+				7546E3BA21D16C4400785A06 /* TestOptionsVC.swift in Sources */,
+				7516E7A821D08D4C0053048A /* CameraVC.swift in Sources */,
 				7516E7A121D049950053048A /* SideMenuTVC.swift in Sources */,
+				75A546C121D19BCC002EC26A /* LCDTestVC.swift in Sources */,
 				7516E7A621D07E2A0053048A /* UIColor+Extension.swift in Sources */,
+				75A546C321D19BE2002EC26A /* GPSTestVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
