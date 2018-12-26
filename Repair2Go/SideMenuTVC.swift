@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import SideMenu
 
 class SideMenuTVC: UITableViewController {
     
-    var menulist = ["About us", "Route"]
+    let menulist = ["Special offer!", "Add to contacts", "About us", "Route", "Opening hours", "Create Appointment", "Privacy"]
+    let thumbList = ["spec_offer", "addcontacts", "aboutus", "route", "openhours", "calendar", ""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,8 @@ class SideMenuTVC: UITableViewController {
         
         self.navigationController?.navigationBar.tintColor = UIColor(hex: "ED2728")
         
+        SideMenuManager.defaultManager.menuPresentMode = .menuSlideIn
+        
     }
 
     // MARK: - Table view data source
@@ -50,6 +54,7 @@ class SideMenuTVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
 
         cell.lblMenu.text = menulist[indexPath.row]
+        cell.ivMenu.image = UIImage(named: thumbList[indexPath.row])
         cell.selectionStyle = .none
 
         return cell

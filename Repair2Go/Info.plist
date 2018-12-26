@@ -43,5 +43,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Repair2Go would like to open Camera to check if it is working fine.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Repair2Go would like to use Microphone to check if it is working fine.</string>
 </dict>
 </plist>
