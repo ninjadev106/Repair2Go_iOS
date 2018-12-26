@@ -217,6 +217,11 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
         }
     }
     
+    @IBAction func onTappedBtnBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     func displayAlert(alertTitle: String, msg: String, actionTitle: String) {
         let alert = UIAlertController(title: alertTitle, message: msg, preferredStyle: .alert)
         let okAction = UIAlertAction(title: actionTitle, style: .cancel, handler: nil)

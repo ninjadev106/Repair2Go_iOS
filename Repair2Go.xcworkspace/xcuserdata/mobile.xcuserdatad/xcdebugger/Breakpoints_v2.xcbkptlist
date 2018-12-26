@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Repair2Go/TestOptionsVC.swift"
-            timestampString = "567406536.866691"
+            timestampString = "567541460.741215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "TestOptionsVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

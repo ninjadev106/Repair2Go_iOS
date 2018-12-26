@@ -45,5 +45,7 @@
 	<string>Repair2Go would like to open Camera to check if it is working fine.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Repair2Go would like to use Microphone to check if it is working fine.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Repair2Go would like to get current locatioin.</string>
 </dict>
 </plist>

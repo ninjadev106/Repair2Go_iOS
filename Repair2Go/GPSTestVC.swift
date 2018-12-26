@@ -7,16 +7,30 @@
 //
 
 import UIKit
+import MapKit
 
-class GPSTestVC: UIViewController {
-
+class GPSTestVC: UIViewController, MKMapViewDelegate {
+    
+    @IBOutlet weak var mvMap: MKMapView!
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        
+        mvMap.delegate = self
+        mvMap.showsUserLocation = true
+        
     }
     
-
+    @IBAction func onTappedBtnBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +41,25 @@ class GPSTestVC: UIViewController {
     }
     */
 
+}
+
+extension GPSTestVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.first else { return }
+        let span = MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        let region = MKCoordinateRegion(center: location.coordinate, span: span)
+        mvMap.setRegion(region, animated: true)
+        
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: \(error)")
+    }
 }

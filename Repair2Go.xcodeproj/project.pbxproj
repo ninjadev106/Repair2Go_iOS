@@ -15,7 +15,7 @@
 		7516E7A821D08D4C0053048A /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A721D08D4C0053048A /* CameraVC.swift */; };
 		7546E3BA21D16C4400785A06 /* TestOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7546E3B921D16C4400785A06 /* TestOptionsVC.swift */; };
 		7546E3BC21D1733C00785A06 /* TouchTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7546E3BB21D1733C00785A06 /* TouchTestVC.swift */; };
-		75A546C121D19BCC002EC26A /* LCDTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A546C021D19BCC002EC26A /* LCDTestVC.swift */; };
+		75A546C121D19BCC002EC26A /* LcdTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A546C021D19BCC002EC26A /* LcdTestVC.swift */; };
 		75A546C321D19BE2002EC26A /* GPSTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A546C221D19BE2002EC26A /* GPSTestVC.swift */; };
 		75A546C521D19BFA002EC26A /* MicrophoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A546C421D19BFA002EC26A /* MicrophoneVC.swift */; };
 		75B9625A21CEB06E0037400F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9625921CEB06E0037400F /* AppDelegate.swift */; };
@@ -26,6 +26,9 @@
 		75B9626F21CEB06F0037400F /* Repair2GoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9626E21CEB06F0037400F /* Repair2GoTests.swift */; };
 		75B9627A21CEB06F0037400F /* Repair2GoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9627921CEB06F0037400F /* Repair2GoUITests.swift */; };
 		75B9628921CEC06B0037400F /* launchlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B9628821CEC06B0037400F /* launchlogo.png */; };
+		75DCD3EB21D3D66900281EEE /* FlashLightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCD3EA21D3D66900281EEE /* FlashLightVC.swift */; };
+		75DCD3ED21D3DAFB00281EEE /* VibrateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCD3EC21D3DAFB00281EEE /* VibrateVC.swift */; };
+		75DCD3EF21D3EA1E00281EEE /* SensorTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCD3EE21D3EA1E00281EEE /* SensorTestVC.swift */; };
 		7A118DDC5FBFB02CA20E918F /* Pods_Repair2GoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F12163E4586985A58631C /* Pods_Repair2GoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +61,7 @@
 		7516E7A721D08D4C0053048A /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		7546E3B921D16C4400785A06 /* TestOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOptionsVC.swift; sourceTree = "<group>"; };
 		7546E3BB21D1733C00785A06 /* TouchTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTestVC.swift; sourceTree = "<group>"; };
-		75A546C021D19BCC002EC26A /* LCDTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDTestVC.swift; sourceTree = "<group>"; };
+		75A546C021D19BCC002EC26A /* LcdTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LcdTestVC.swift; sourceTree = "<group>"; };
 		75A546C221D19BE2002EC26A /* GPSTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSTestVC.swift; sourceTree = "<group>"; };
 		75A546C421D19BFA002EC26A /* MicrophoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneVC.swift; sourceTree = "<group>"; };
 		75B9625621CEB06E0037400F /* Repair2Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repair2Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +78,9 @@
 		75B9627921CEB06F0037400F /* Repair2GoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repair2GoUITests.swift; sourceTree = "<group>"; };
 		75B9627B21CEB06F0037400F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B9628821CEC06B0037400F /* launchlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchlogo.png; sourceTree = "<group>"; };
+		75DCD3EA21D3D66900281EEE /* FlashLightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashLightVC.swift; sourceTree = "<group>"; };
+		75DCD3EC21D3DAFB00281EEE /* VibrateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrateVC.swift; sourceTree = "<group>"; };
+		75DCD3EE21D3EA1E00281EEE /* SensorTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTestVC.swift; sourceTree = "<group>"; };
 		841F12163E4586985A58631C /* Pods_Repair2GoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repair2GoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FF7650E5680FCAFB332F9F /* Pods_Repair2Go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repair2Go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C825A00C225B69D6C5B9CD8C /* Pods-Repair2GoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoUITests/Pods-Repair2GoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,9 +180,12 @@
 				7546E3B921D16C4400785A06 /* TestOptionsVC.swift */,
 				7516E7A721D08D4C0053048A /* CameraVC.swift */,
 				7546E3BB21D1733C00785A06 /* TouchTestVC.swift */,
-				75A546C021D19BCC002EC26A /* LCDTestVC.swift */,
+				75A546C021D19BCC002EC26A /* LcdTestVC.swift */,
 				75A546C221D19BE2002EC26A /* GPSTestVC.swift */,
 				75A546C421D19BFA002EC26A /* MicrophoneVC.swift */,
+				75DCD3EA21D3D66900281EEE /* FlashLightVC.swift */,
+				75DCD3EC21D3DAFB00281EEE /* VibrateVC.swift */,
+				75DCD3EE21D3EA1E00281EEE /* SensorTestVC.swift */,
 				75B9625D21CEB06E0037400F /* Main.storyboard */,
 				75B9626021CEB06F0037400F /* Assets.xcassets */,
 				75B9626221CEB06F0037400F /* LaunchScreen.storyboard */,
@@ -428,13 +437,16 @@
 				7546E3BC21D1733C00785A06 /* TouchTestVC.swift in Sources */,
 				75B9625C21CEB06E0037400F /* HomeVC.swift in Sources */,
 				75B9625A21CEB06E0037400F /* AppDelegate.swift in Sources */,
+				75DCD3EB21D3D66900281EEE /* FlashLightVC.swift in Sources */,
 				7516E7A321D050C50053048A /* MenuCell.swift in Sources */,
 				7546E3BA21D16C4400785A06 /* TestOptionsVC.swift in Sources */,
 				7516E7A821D08D4C0053048A /* CameraVC.swift in Sources */,
 				7516E7A121D049950053048A /* SideMenuTVC.swift in Sources */,
-				75A546C121D19BCC002EC26A /* LCDTestVC.swift in Sources */,
+				75A546C121D19BCC002EC26A /* LcdTestVC.swift in Sources */,
+				75DCD3EF21D3EA1E00281EEE /* SensorTestVC.swift in Sources */,
 				7516E7A621D07E2A0053048A /* UIColor+Extension.swift in Sources */,
 				75A546C321D19BE2002EC26A /* GPSTestVC.swift in Sources */,
+				75DCD3ED21D3DAFB00281EEE /* VibrateVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

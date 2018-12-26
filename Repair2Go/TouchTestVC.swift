@@ -32,6 +32,9 @@ class TouchTestVC: UIViewController {
 //        layer.backgroundColor = layerBackgroundColor;
     }
     
+    @IBAction func onTappedBtnBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
     /*

@@ -39,9 +39,33 @@ class TestOptionsVC: UIViewController {
     }
     
     @IBAction func onTappedBtnLCD(_ sender: Any) {
+        let lcdTestVC = self.storyboard?.instantiateViewController(withIdentifier: "LcdTestVC") as! LcdTestVC
+        lcdTestVC.modalPresentationStyle = .fullScreen
+        self.present(lcdTestVC, animated: true, completion: nil)
     }
     
     @IBAction func onTappedBtnGPS(_ sender: Any) {
+        let gpsTestVC = self.storyboard?.instantiateViewController(withIdentifier: "GPSTestVC") as! GPSTestVC
+        gpsTestVC.modalPresentationStyle = .fullScreen
+        self.present(gpsTestVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedBtnTorch(_ sender: Any) {
+        let flashLightVC = self.storyboard?.instantiateViewController(withIdentifier: "FlashLightVC") as! FlashLightVC
+        flashLightVC.modalPresentationStyle = .fullScreen
+        self.present(flashLightVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedBtnVibrate(_ sender: Any) {
+        let vibrateVC = self.storyboard?.instantiateViewController(withIdentifier: "VibrateVC") as! VibrateVC
+        vibrateVC.modalPresentationStyle = .fullScreen
+        self.present(vibrateVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedBtnSensor(_ sender: Any) {
+        let sensorTestVC = self.storyboard?.instantiateViewController(withIdentifier: "SensorTestVC") as! SensorTestVC
+        sensorTestVC.modalPresentationStyle = .fullScreen
+        self.present(sensorTestVC, animated: true, completion: nil)
     }
     
     
