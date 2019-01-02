@@ -9,6 +9,15 @@
 import UIKit
 import SideMenu
 
+enum TargetScreen: Int {
+    case spec_offer
+    case addcontacts
+    case aboutus
+    case route
+    case openhours
+    case appointment
+}
+
 class SideMenuTVC: UITableViewController {
     
     let menulist = ["Special offer!", "Add to contacts", "About us", "Route", "Opening hours", "Create Appointment", "Privacy"]
@@ -60,6 +69,7 @@ class SideMenuTVC: UITableViewController {
         return cell
     }
     
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -95,6 +105,25 @@ class SideMenuTVC: UITableViewController {
     }
     */
 
+    // MARK: UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            dismiss(animated: true) {
+                
+            }
+        } else if indexPath.row == 5 {
+            if let parent = self.presentingViewController as? UINavigationController {
+                dismiss(animated: false) {
+                    if let homeController = parent.viewControllers.first as? HomeVC {
+                        homeController.displayMenuItemScreen(TargetScreen(rawValue: indexPath.row)!)
+                    }
+                }
+            }
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 

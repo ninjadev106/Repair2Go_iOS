@@ -24,6 +24,26 @@ class HomeVC: UIViewController {
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         statusBar.backgroundColor = UIColor.white
     }
+    
+    public func displayMenuItemScreen(_ screen: TargetScreen) {
+        switch screen {
+        case .spec_offer:
+            print("")
+        case .addcontacts:
+            print("")
+        case .aboutus:
+            print("")
+        case .route:
+            print("")
+        case .openhours:
+            print("")
+        case .appointment:
+            let appointmentVC = self.storyboard?.instantiateViewController(withIdentifier: "AppointmentVC") as! AppointmentVC
+            self.present(appointmentVC, animated: true, completion: nil)
+        default:
+            print("")
+        }
+    }
 
 
 }

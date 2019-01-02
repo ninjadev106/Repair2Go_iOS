@@ -9,6 +9,7 @@ target 'Repair2Go' do
   pod 'SideMenu'
   pod 'SnapKit'
   pod 'DeviceKit', '~> 1.3'
+  pod 'IQKeyboardManager'
 
   target 'Repair2GoTests' do
     inherit! :search_paths
