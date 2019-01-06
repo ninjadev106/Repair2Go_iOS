@@ -108,16 +108,10 @@ class SideMenuTVC: UITableViewController {
     // MARK: UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            dismiss(animated: true) {
-                
-            }
-        } else if indexPath.row == 5 {
-            if let parent = self.presentingViewController as? UINavigationController {
-                dismiss(animated: false) {
-                    if let homeController = parent.viewControllers.first as? HomeVC {
-                        homeController.displayMenuItemScreen(TargetScreen(rawValue: indexPath.row)!)
-                    }
+        if let parent = self.presentingViewController as? UINavigationController {
+            dismiss(animated: false) {
+                if let homeController = parent.viewControllers.first as? HomeVC {
+                    homeController.displayMenuItemScreen(TargetScreen(rawValue: indexPath.row)!)
                 }
             }
         }

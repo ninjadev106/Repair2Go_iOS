@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ContactsUI
 
 class HomeVC: UIViewController {
 
@@ -30,7 +31,8 @@ class HomeVC: UIViewController {
         case .spec_offer:
             print("")
         case .addcontacts:
-            print("")
+            let contactsVC = CNContactPickerViewController()
+            self.present(contactsVC, animated: true, completion: nil)
         case .aboutus:
             print("")
         case .route:

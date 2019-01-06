@@ -28,15 +28,22 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
         case
         top = "Top",
         back = "Back",
-        front = "Front"
+        front = "Front",
+        bottom = "Bottom"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         micMode = 0
-        currentInputDataSourceMode = inputDataSourceMode.top
-        lblMicrophone.text = "Top"
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            currentInputDataSourceMode = inputDataSourceMode.top
+            lblMicrophone.text = "iPad Microphone | Top"
+        } else if UIDevice.current.userInterfaceIdiom == .phone {
+            currentInputDataSourceMode = inputDataSourceMode.bottom
+            lblMicrophone.text = "iPhone Microphone | Bottom"
+        }
         
         checkRecordPermissions()
         self.recordButton.addTarget(self, action: #selector(self.onTappedBtnRecord), for: .touchUpInside)
@@ -138,7 +145,7 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
             audioRecorder.delegate = self
             audioRecorder.record()
             
-            recordButton.setTitle("Stop", for: .normal)
+            recordButton.setImage(UIImage(named: "recordstop"), for: .normal)
         } catch {
             finishRecording(success: false)
         }
@@ -159,9 +166,9 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
         audioRecorder = nil
         
         if success {
-            recordButton.setTitle("Record", for: .normal)
+            recordButton.setImage(UIImage(named: "record"), for: .normal)
         } else {
-            recordButton.setTitle("Record", for: .normal)
+            recordButton.setImage(UIImage(named: "record"), for: .normal)
             print("Recording failed")
         }
     }
@@ -173,14 +180,35 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
             micMode = 0
         }
         if micMode == 0 {
-            currentInputDataSourceMode = inputDataSourceMode.top
-            lblMicrophone.text = "Top"
+            
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                currentInputDataSourceMode = inputDataSourceMode.top
+                lblMicrophone.text = "iPad Microphone | Top"
+            } else if UIDevice.current.userInterfaceIdiom == .phone {
+                currentInputDataSourceMode = inputDataSourceMode.bottom
+                lblMicrophone.text = "iPhone Microphone | Bottom"
+            }
+            
         } else if micMode == 1 {
-            currentInputDataSourceMode = inputDataSourceMode.back
-            lblMicrophone.text = "Back"
+            
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                currentInputDataSourceMode = inputDataSourceMode.back
+                lblMicrophone.text = "iPad Microphone | Back"
+            } else if UIDevice.current.userInterfaceIdiom == .phone {
+                currentInputDataSourceMode = inputDataSourceMode.front
+                lblMicrophone.text = "iPhone Microphone | Front"
+            }
+            
         } else {
-            currentInputDataSourceMode = inputDataSourceMode.front
-            lblMicrophone.text = "Front"
+            
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                currentInputDataSourceMode = inputDataSourceMode.front
+                lblMicrophone.text = "iPad Microphone | Front"
+            } else if UIDevice.current.userInterfaceIdiom == .phone {
+                currentInputDataSourceMode = inputDataSourceMode.back
+                lblMicrophone.text = "iPhone Microphone | Back"
+            }
+            
         }
         
     }
@@ -201,12 +229,12 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
         if(isPlaying) {
             audioPlayer.stop()
             recordButton.isEnabled = true
-            playButton.setTitle("Play", for: .normal)
+            playButton.setImage(UIImage(named: "play"), for: .normal)
             isPlaying = false
         } else {
             if FileManager.default.fileExists(atPath: getFileUrl().path) {
                 recordButton.isEnabled = false
-                playButton.setTitle("pause", for: .normal)
+                playButton.setImage(UIImage(named: "pause"), for: .normal)
                 prepare_play()
                 audioPlayer.play()
                 isPlaying = true
@@ -244,6 +272,7 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
     //MARK: - AVAudioPlayerDelegate
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         recordButton.isEnabled = true
+        playButton.setImage(UIImage(named: "play"), for: .normal)
     }
     
     /*
