@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		120E25183EC6B86512E6C119 /* Pods_Repair2Go.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FF7650E5680FCAFB332F9F /* Pods_Repair2Go.framework */; };
+		4641955A21E2742700009A48 /* TouchTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641955921E2742700009A48 /* TouchTestView.swift */; };
+		4641955C21E2E26600009A48 /* AddContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641955B21E2E26600009A48 /* AddContactVC.swift */; };
+		4641955E21E2FB9800009A48 /* RouteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641955D21E2FB9800009A48 /* RouteVC.swift */; };
 		65BA749E312E922AB038FEBF /* Pods_Repair2GoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059F5549761A8B4C75128CCF /* Pods_Repair2GoTests.framework */; };
 		7516E7A121D049950053048A /* SideMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A021D049950053048A /* SideMenuTVC.swift */; };
 		7516E7A321D050C50053048A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516E7A221D050C50053048A /* MenuCell.swift */; };
@@ -54,6 +57,10 @@
 /* Begin PBXFileReference section */
 		059F5549761A8B4C75128CCF /* Pods_Repair2GoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repair2GoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		251972218355C6E5FAFF3DE8 /* Pods-Repair2GoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoTests/Pods-Repair2GoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4641955921E2742700009A48 /* TouchTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTestView.swift; sourceTree = "<group>"; };
+		4641955B21E2E26600009A48 /* AddContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactVC.swift; sourceTree = "<group>"; };
+		4641955D21E2FB9800009A48 /* RouteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteVC.swift; sourceTree = "<group>"; };
+		4641957821E32F0600009A48 /* Repair2Go-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Repair2Go-Bridging-Header.h"; sourceTree = "<group>"; };
 		525AE135BD74F17B30A81C62 /* Pods-Repair2Go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2Go.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2Go/Pods-Repair2Go.debug.xcconfig"; sourceTree = "<group>"; };
 		5C76EA238545F1DCD46D7B25 /* Pods-Repair2GoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoTests/Pods-Repair2GoTests.release.xcconfig"; sourceTree = "<group>"; };
 		6EEB6BC054BF928ED0F6133F /* Pods-Repair2GoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repair2GoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Repair2GoUITests/Pods-Repair2GoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +191,7 @@
 				7546E3B921D16C4400785A06 /* TestOptionsVC.swift */,
 				7516E7A721D08D4C0053048A /* CameraVC.swift */,
 				7546E3BB21D1733C00785A06 /* TouchTestVC.swift */,
+				4641955921E2742700009A48 /* TouchTestView.swift */,
 				75A546C021D19BCC002EC26A /* LcdTestVC.swift */,
 				75A546C221D19BE2002EC26A /* GPSTestVC.swift */,
 				75A546C421D19BFA002EC26A /* MicrophoneVC.swift */,
@@ -191,11 +199,14 @@
 				75DCD3EC21D3DAFB00281EEE /* VibrateVC.swift */,
 				75DCD3EE21D3EA1E00281EEE /* SensorTestVC.swift */,
 				759CC06B21DC64FE004B051F /* AppointmentVC.swift */,
+				4641955B21E2E26600009A48 /* AddContactVC.swift */,
+				4641955D21E2FB9800009A48 /* RouteVC.swift */,
 				759CC06D21DC8CBB004B051F /* OpenhoursVC.swift */,
 				75B9625D21CEB06E0037400F /* Main.storyboard */,
 				75B9626021CEB06F0037400F /* Assets.xcassets */,
 				75B9626221CEB06F0037400F /* LaunchScreen.storyboard */,
 				75B9626521CEB06F0037400F /* Info.plist */,
+				4641957821E32F0600009A48 /* Repair2Go-Bridging-Header.h */,
 			);
 			path = Repair2Go;
 			sourceTree = "<group>";
@@ -298,6 +309,7 @@
 				TargetAttributes = {
 					75B9625521CEB06E0037400F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					75B9626921CEB06F0037400F = {
 						CreatedOnToolsVersion = 10.1;
@@ -444,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A546C521D19BFA002EC26A /* MicrophoneVC.swift in Sources */,
+				4641955C21E2E26600009A48 /* AddContactVC.swift in Sources */,
 				7546E3BC21D1733C00785A06 /* TouchTestVC.swift in Sources */,
 				75B9625C21CEB06E0037400F /* HomeVC.swift in Sources */,
 				759CC06C21DC64FE004B051F /* AppointmentVC.swift in Sources */,
@@ -457,6 +470,8 @@
 				75A546C121D19BCC002EC26A /* LcdTestVC.swift in Sources */,
 				75DCD3EF21D3EA1E00281EEE /* SensorTestVC.swift in Sources */,
 				7516E7A621D07E2A0053048A /* UIColor+Extension.swift in Sources */,
+				4641955E21E2FB9800009A48 /* RouteVC.swift in Sources */,
+				4641955A21E2742700009A48 /* TouchTestView.swift in Sources */,
 				75A546C321D19BE2002EC26A /* GPSTestVC.swift in Sources */,
 				75DCD3ED21D3DAFB00281EEE /* VibrateVC.swift in Sources */,
 			);
@@ -634,6 +649,7 @@
 			baseConfigurationReference = 525AE135BD74F17B30A81C62 /* Pods-Repair2Go.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AF8V6BN5YT;
 				INFOPLIST_FILE = Repair2Go/Info.plist;
@@ -644,6 +660,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainsic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Repair2Go/Repair2Go-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -654,6 +672,7 @@
 			baseConfigurationReference = E0FC1BFE67CC7DAFD0AA7C54 /* Pods-Repair2Go.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AF8V6BN5YT;
 				INFOPLIST_FILE = Repair2Go/Info.plist;
@@ -664,6 +683,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainsic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Repair2Go/Repair2Go-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

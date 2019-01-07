@@ -51,6 +51,19 @@ class LcdTestVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func onTappedOk(_ sender: Any) {
+        TestOptionsVC.lcdTestResult = .success
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedFailed(_ sender: Any) {
+        TestOptionsVC.lcdTestResult = .failed
+        
+        dismiss(animated: true, completion: nil)
+    }
+
+    
     /*
     // MARK: - Navigation
 

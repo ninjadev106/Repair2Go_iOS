@@ -31,6 +31,18 @@ class GPSTestVC: UIViewController, MKMapViewDelegate {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func onTappedOk(_ sender: Any) {
+        TestOptionsVC.gpsTestResult = .success
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedFailed(_ sender: Any) {
+        TestOptionsVC.gpsTestResult = .failed
+        
+        dismiss(animated: true, completion: nil)
+    }
+
     /*
     // MARK: - Navigation
 

@@ -1,5 +1,5 @@
 PODS:
-  - DeviceKit (1.10.0)
+  - DeviceKit (1.11.0)
   - IQKeyboardManager (6.2.0)
   - SideMenu (5.0.3)
   - SnapKit (4.2.0)
@@ -11,18 +11,18 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - DeviceKit
     - IQKeyboardManager
     - SideMenu
     - SnapKit
 
 SPEC CHECKSUMS:
-  DeviceKit: 2a6cf0d1ec05e2ac7f9b24cdfdb3cb358900a247
+  DeviceKit: a3a86f8dddbe1317a9a243cdf9646858bf135dce
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: beacbbb24bf6ed3119563eaa79848775fe239446
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

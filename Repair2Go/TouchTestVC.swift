@@ -13,18 +13,29 @@ class TouchTestVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(drawRectangular))
-        self.view.addGestureRecognizer(tap)
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        statusBar.backgroundColor = UIColor.clear
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        statusBar.backgroundColor = UIColor.white
+    }
+    
     @objc func drawRectangular(_ tapper: UITapGestureRecognizer) {
-        let tapLocation = tapper.location(in: tapper.view)
-        let layer = CAShapeLayer()
-        layer.position = tapLocation
-        layer.backgroundColor = UIColor.green.cgColor
-        layer.bounds = CGRect(x: tapLocation.x, y: tapLocation.y, width: 20, height: 20)
-        self.view.layer.addSublayer(layer)
+//        let tapLocation = tapper.location(in: tapper.view)
+//        let layer = CAShapeLayer()
+//        layer.position = tapLocation
+//        layer.backgroundColor = UIColor.green.cgColor
+//        layer.bounds = CGRect(x: tapLocation.x, y: tapLocation.y, width: 20, height: 20)
+//        self.view.layer.addSublayer(layer)
         
 //        CALayer *newLayer = [CALayer layer];
 //        layer.bounds = layerBounds;
@@ -35,7 +46,18 @@ class TouchTestVC: UIViewController {
     @IBAction func onTappedBtnBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
+
+    @IBAction func onTappedOk(_ sender: Any) {
+        TestOptionsVC.touchTestResult = .success
+        
+        dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func onTappedFailed(_ sender: Any) {
+        TestOptionsVC.touchTestResult = .failed
+        
+        dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

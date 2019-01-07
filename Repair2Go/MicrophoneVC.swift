@@ -275,6 +275,19 @@ class MicrophoneVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDele
         playButton.setImage(UIImage(named: "play"), for: .normal)
     }
     
+    @IBAction func onTappedOk(_ sender: Any) {
+        TestOptionsVC.micTestResult = .success
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedFailed(_ sender: Any) {
+        TestOptionsVC.micTestResult = .failed
+        
+        dismiss(animated: true, completion: nil)
+    }
+
+    
     /*
     // MARK: - Navigation
 

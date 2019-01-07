@@ -18,6 +18,7 @@ class HomeVC: UIViewController {
         
     }
     
+    
     func setStatusBar() {
 //        UIApplication.shared.statusBarStyle = .default
         UINavigationBar.appearance().clipsToBounds = true
@@ -31,12 +32,13 @@ class HomeVC: UIViewController {
         case .spec_offer:
             print("")
         case .addcontacts:
-            let contactsVC = CNContactPickerViewController()
+            let contactsVC = self.storyboard?.instantiateViewController(withIdentifier: "AddContactVC") as! AddContactVC
             self.present(contactsVC, animated: true, completion: nil)
         case .aboutus:
             print("")
         case .route:
-            print("")
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "RouteVC") as! RouteVC
+            self.present(controller, animated: true, completion: nil)
         case .openhours:
             print("")
         case .appointment:

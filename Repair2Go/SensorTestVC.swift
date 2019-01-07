@@ -42,6 +42,18 @@ class SensorTestVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func onTappedOk(_ sender: Any) {
+        TestOptionsVC.sensorTestResult = .success
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedFailed(_ sender: Any) {
+        TestOptionsVC.sensorTestResult = .failed
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

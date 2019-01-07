@@ -9,6 +9,12 @@
 import UIKit
 import DeviceKit
 
+enum TestResult: Int {
+    case failed
+    case none
+    case success
+}
+
 class TestOptionsVC: UIViewController {
 
     @IBOutlet weak var lblDeviceModel: UILabel!
@@ -17,6 +23,24 @@ class TestOptionsVC: UIViewController {
     @IBOutlet weak var lblStorage: UILabel!
     @IBOutlet weak var lblBattery: UILabel!
     
+    @IBOutlet weak var imageTouchTestResult: UIImageView!
+    @IBOutlet weak var imageMicTestResult: UIImageView!
+    @IBOutlet weak var imageCameraTestResult: UIImageView!
+    @IBOutlet weak var imageLCDTestResult: UIImageView!
+    @IBOutlet weak var imageGPSTestResult: UIImageView!
+    @IBOutlet weak var imageVibrateTestResult: UIImageView!
+    @IBOutlet weak var imageFlashTestResult: UIImageView!
+    @IBOutlet weak var imageSensorTestResult: UIImageView!
+
+    public static var touchTestResult = TestResult.none
+    public static var micTestResult = TestResult.none
+    public static var cameraTestResult = TestResult.none
+    public static var lcdTestResult = TestResult.none
+    public static var gpsTestResult = TestResult.none
+    public static var vibrateTestResult = TestResult.none
+    public static var flashTestResult = TestResult.none
+    public static var sensorTestResult = TestResult.none
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +57,30 @@ class TestOptionsVC: UIViewController {
         let percent: Double = used / total * 100
         let roundedPercent = Double(round(10*percent)/10)
         lblStorage.text = usedDiskSpace + "/" + totalDiskSpace + " (" + String(roundedPercent) + "%)"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        updateTestResult(TestOptionsVC.touchTestResult, target: imageTouchTestResult)
+        updateTestResult(TestOptionsVC.micTestResult, target: imageMicTestResult)
+        updateTestResult(TestOptionsVC.cameraTestResult, target: imageCameraTestResult)
+        updateTestResult(TestOptionsVC.lcdTestResult, target: imageLCDTestResult)
+        updateTestResult(TestOptionsVC.gpsTestResult, target: imageGPSTestResult)
+        updateTestResult(TestOptionsVC.vibrateTestResult, target: imageVibrateTestResult)
+        updateTestResult(TestOptionsVC.flashTestResult, target: imageFlashTestResult)
+        updateTestResult(TestOptionsVC.sensorTestResult, target: imageSensorTestResult)
+    }
+
+    func updateTestResult(_ result: TestResult, target: UIImageView){
+        switch result {
+        case .failed:
+            target.image = UIImage(named: "uncheck")
+        case .success:
+            target.image = UIImage(named: "check")
+        case .none:
+            target.image = UIImage(named: "")
+        }
     }
     
     @IBAction func onTappedBtnBack(_ sender: Any) {

@@ -48,6 +48,18 @@ class FlashLightVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func onTappedOk(_ sender: Any) {
+        TestOptionsVC.flashTestResult = .success
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onTappedFailed(_ sender: Any) {
+        TestOptionsVC.flashTestResult = .failed
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
