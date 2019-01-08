@@ -16,6 +16,7 @@ enum TargetScreen: Int {
     case route
     case openhours
     case appointment
+    case privacy
 }
 
 class SideMenuTVC: UITableViewController {

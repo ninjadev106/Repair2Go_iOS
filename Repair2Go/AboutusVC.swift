@@ -1,33 +1,30 @@
 //
-//  OpenhoursVC.swift
+//  AboutusVC.swift
 //  Repair2Go
 //
-//  Created by mobile on 1/1/19.
+//  Created by mobile on 1/7/19.
 //  Copyright © 2019 developer. All rights reserved.
 //
 
 import UIKit
 
-class OpenhoursVC: UIViewController {
-
+class AboutusVC: UIViewController {
+    @IBOutlet weak var imgLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imgLogo.layer.cornerRadius = imgLogo.bounds.height / 2
+        imgLogo.layer.masksToBounds = true
     }
     
     @IBAction func onTappedBtnBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
-    @IBAction func onTappedBtnCall(_ sender: Any) {
-        if let url = URL(string: "tel://\(0615577770)"), UIApplication.shared.canOpenURL(url) {
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-        }
+    
+    @IBAction func onTappedBtnWebsite(_ sender: Any) {
+        guard let url = URL(string: "https://www.repair2go.nl") else { return }
+        UIApplication.shared.open(url)
     }
     
     

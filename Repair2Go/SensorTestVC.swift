@@ -12,6 +12,8 @@ class SensorTestVC: UIViewController {
     
     @IBOutlet weak var testView: UIView!
     
+    let device = UIDevice.current
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,8 +21,11 @@ class SensorTestVC: UIViewController {
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        device.isProximityMonitoringEnabled = false
+    }
+    
     func activateProximitySensor() {
-        let device = UIDevice.current
         device.isProximityMonitoringEnabled = true
         if device.isProximityMonitoringEnabled {
             NotificationCenter.default.addObserver(self, selector: #selector(proximityChanged), name: UIDevice.proximityStateDidChangeNotification, object: device)

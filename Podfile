@@ -10,6 +10,7 @@ target 'Repair2Go' do
   pod 'SnapKit'
   pod 'DeviceKit', '~> 1.3'
   pod 'IQKeyboardManager'
+  pod 'Firebase/Core'
 
   target 'Repair2GoTests' do
     inherit! :search_paths
