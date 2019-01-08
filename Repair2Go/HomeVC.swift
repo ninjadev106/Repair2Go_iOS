@@ -30,7 +30,8 @@ class HomeVC: UIViewController {
     public func displayMenuItemScreen(_ screen: TargetScreen) {
         switch screen {
         case .spec_offer:
-            print("")
+            let specialOfferVC = self.storyboard?.instantiateViewController(withIdentifier: "SpecialOfferVC") as! SpecialOfferVC
+            self.present(specialOfferVC, animated: true, completion: nil)
         case .addcontacts:
             let contactsVC = self.storyboard?.instantiateViewController(withIdentifier: "AddContactVC") as! AddContactVC
             self.present(contactsVC, animated: true, completion: nil)

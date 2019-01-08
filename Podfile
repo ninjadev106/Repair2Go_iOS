@@ -11,6 +11,9 @@ target 'Repair2Go' do
   pod 'DeviceKit', '~> 1.3'
   pod 'IQKeyboardManager'
   pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'SDWebImage'
+  pod 'FirebaseUI/Storage'
 
   target 'Repair2GoTests' do
     inherit! :search_paths

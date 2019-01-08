@@ -33,6 +33,7 @@
 		75B9628921CEC06B0037400F /* launchlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B9628821CEC06B0037400F /* launchlogo.png */; };
 		75C2B85221E38A2600DEF849 /* AboutusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2B85121E38A2600DEF849 /* AboutusVC.swift */; };
 		75C2B85421E3DE5400DEF849 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C2B85321E3DE5400DEF849 /* GoogleService-Info.plist */; };
+		75C2B85621E4546500DEF849 /* SpecialOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2B85521E4546500DEF849 /* SpecialOfferVC.swift */; };
 		75DCD3EB21D3D66900281EEE /* FlashLightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCD3EA21D3D66900281EEE /* FlashLightVC.swift */; };
 		75DCD3ED21D3DAFB00281EEE /* VibrateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCD3EC21D3DAFB00281EEE /* VibrateVC.swift */; };
 		75DCD3EF21D3EA1E00281EEE /* SensorTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCD3EE21D3EA1E00281EEE /* SensorTestVC.swift */; };
@@ -93,6 +94,7 @@
 		75B9628821CEC06B0037400F /* launchlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchlogo.png; sourceTree = "<group>"; };
 		75C2B85121E38A2600DEF849 /* AboutusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutusVC.swift; sourceTree = "<group>"; };
 		75C2B85321E3DE5400DEF849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75C2B85521E4546500DEF849 /* SpecialOfferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialOfferVC.swift; sourceTree = "<group>"; };
 		75DCD3EA21D3D66900281EEE /* FlashLightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashLightVC.swift; sourceTree = "<group>"; };
 		75DCD3EC21D3DAFB00281EEE /* VibrateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrateVC.swift; sourceTree = "<group>"; };
 		75DCD3EE21D3EA1E00281EEE /* SensorTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTestVC.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				4641955B21E2E26600009A48 /* AddContactVC.swift */,
 				4641955D21E2FB9800009A48 /* RouteVC.swift */,
 				759CC06D21DC8CBB004B051F /* OpenhoursVC.swift */,
+				75C2B85521E4546500DEF849 /* SpecialOfferVC.swift */,
 				75B9625D21CEB06E0037400F /* Main.storyboard */,
 				75B9626021CEB06F0037400F /* Assets.xcassets */,
 				75B9626221CEB06F0037400F /* LaunchScreen.storyboard */,
@@ -421,8 +424,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Repair2Go/Pods-Repair2Go-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -430,8 +435,10 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -483,6 +490,7 @@
 				75DCD3EF21D3EA1E00281EEE /* SensorTestVC.swift in Sources */,
 				7516E7A621D07E2A0053048A /* UIColor+Extension.swift in Sources */,
 				4641955E21E2FB9800009A48 /* RouteVC.swift in Sources */,
+				75C2B85621E4546500DEF849 /* SpecialOfferVC.swift in Sources */,
 				4641955A21E2742700009A48 /* TouchTestView.swift in Sources */,
 				75A546C321D19BE2002EC26A /* GPSTestVC.swift in Sources */,
 				75DCD3ED21D3DAFB00281EEE /* VibrateVC.swift in Sources */,

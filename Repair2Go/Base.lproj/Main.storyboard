@@ -1791,7 +1791,7 @@ Also on Sundays and Public Holidays</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gX-6z-Qm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="1462"/>
+            <point key="canvasLocation" x="222" y="1459"/>
         </scene>
         <!--RouteVC-->
         <scene sceneID="Dtg-oB-yVu">
@@ -1853,7 +1853,7 @@ Also on Sundays and Public Holidays</string>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OmI-GC-8dI">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OmI-GC-8dI">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
@@ -1991,6 +1991,62 @@ Also on Sundays and Public Holidays</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZzH-dk-hmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2573.5999999999999" y="1458.6206896551726"/>
+        </scene>
+        <!--Special OfferVC-->
+        <scene sceneID="4pG-hV-pRE">
+            <objects>
+                <viewController storyboardIdentifier="SpecialOfferVC" id="Qlb-us-Nhf" customClass="SpecialOfferVC" customModule="Repair2Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zOt-vw-gYh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0N-Bk-kB0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNq-7F-jcc">
+                                        <rect key="frame" x="16" y="10" width="24" height="24"/>
+                                        <state key="normal" image="close_btn"/>
+                                        <connections>
+                                            <action selector="onTappedBtnBack:" destination="Qlb-us-Nhf" eventType="touchUpInside" id="z04-cp-9os"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rNq-7F-jcc" firstAttribute="centerY" secondItem="r0N-Bk-kB0" secondAttribute="centerY" id="0tB-Qj-Jts"/>
+                                    <constraint firstItem="rNq-7F-jcc" firstAttribute="leading" secondItem="r0N-Bk-kB0" secondAttribute="leading" constant="16" id="OMf-sz-iYT"/>
+                                    <constraint firstAttribute="height" constant="44" id="RTn-hp-UEO"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WXm-Ds-SzV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yYt-Io-rzH">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yYt-Io-rzH" firstAttribute="centerX" secondItem="zOt-vw-gYh" secondAttribute="centerX" id="0iH-mc-lFd"/>
+                            <constraint firstItem="r0N-Bk-kB0" firstAttribute="trailing" secondItem="U0Y-Rd-jM8" secondAttribute="trailing" id="1kK-fe-wmR"/>
+                            <constraint firstItem="WXm-Ds-SzV" firstAttribute="trailing" secondItem="U0Y-Rd-jM8" secondAttribute="trailing" id="aQB-rW-C27"/>
+                            <constraint firstItem="WXm-Ds-SzV" firstAttribute="top" secondItem="r0N-Bk-kB0" secondAttribute="bottom" id="cpy-0o-anl"/>
+                            <constraint firstItem="WXm-Ds-SzV" firstAttribute="bottom" secondItem="U0Y-Rd-jM8" secondAttribute="bottom" id="nMZ-a5-2dz"/>
+                            <constraint firstItem="r0N-Bk-kB0" firstAttribute="top" secondItem="U0Y-Rd-jM8" secondAttribute="top" id="pH5-Vt-hPq"/>
+                            <constraint firstItem="yYt-Io-rzH" firstAttribute="centerY" secondItem="zOt-vw-gYh" secondAttribute="centerY" id="tbP-bG-xwP"/>
+                            <constraint firstItem="WXm-Ds-SzV" firstAttribute="leading" secondItem="U0Y-Rd-jM8" secondAttribute="leading" id="vVQ-ym-Mc2"/>
+                            <constraint firstItem="r0N-Bk-kB0" firstAttribute="leading" secondItem="U0Y-Rd-jM8" secondAttribute="leading" id="xWj-HQ-Wxh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U0Y-Rd-jM8"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="yYt-Io-rzH" id="e0V-fW-mkF"/>
+                        <outlet property="imgSpecialOffer" destination="WXm-Ds-SzV" id="onl-pZ-Uow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Tq-hL-E9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543.20000000000005" y="779.46026986506752"/>
         </scene>
     </scenes>
     <resources>
