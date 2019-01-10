@@ -21,7 +21,7 @@ class OpenhoursVC: UIViewController {
     }
 
     @IBAction func onTappedBtnCall(_ sender: Any) {
-        if let url = URL(string: "tel://\(0615577770)"), UIApplication.shared.canOpenURL(url) {
+        if let url = URL(string: "tel://\(0640901124)"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {
                 UIApplication.shared.open(url)
             } else {

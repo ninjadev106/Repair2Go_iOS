@@ -21,7 +21,7 @@ enum TargetScreen: Int {
 
 class SideMenuTVC: UITableViewController {
     
-    let menulist = ["Special offer!", "Add to contacts", "About us", "Route", "Opening hours", "Create Appointment", "Privacy"]
+    let menulist = ["Aanbieding!", "Voeg toe als Contact", "Over ons", "Route", "Openingstijden", "Afspraak maken", "Privacy"]
     let thumbList = ["spec_offer", "addcontacts", "aboutus", "route", "openhours", "calendar", ""]
 
     override func viewDidLoad() {

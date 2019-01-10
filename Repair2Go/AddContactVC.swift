@@ -37,7 +37,7 @@ class AddContactVC: UIViewController, CNContactViewControllerDelegate {
         a.contactType = .organization
         a.imageData = UIImage(named: "avatar")!.pngData()
         
-        let workPhone = CNLabeledValue(label: "Phone", value: CNPhoneNumber(stringValue: "06 15577770"))
+        let workPhone = CNLabeledValue(label: "Phone", value: CNPhoneNumber(stringValue: "0640901124"))
         a.phoneNumbers = [workPhone]
 
         let workEmail = CNLabeledValue(label:"Email", value:"info@repair2go.nl" as NSString)
@@ -51,7 +51,7 @@ class AddContactVC: UIViewController, CNContactViewControllerDelegate {
         address.street = "Haarlemmerstraat 193 2312 DP"
         address.city = "Leiden Zuid"
         address.state = ""
-        address.postalCode = "0800-1421"
+//        address.postalCode = "0800-1421"
         address.country = "Holland"
         let workAddress = CNLabeledValue<CNPostalAddress>(label:"Address", value:address)
         a.postalAddresses = [workAddress]

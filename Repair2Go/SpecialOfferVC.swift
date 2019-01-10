@@ -22,6 +22,11 @@ class SpecialOfferVC: UIViewController {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        SDImageCache.shared().clearMemory()
+        SDImageCache.shared().clearDisk(onCompletion: nil)
+    }
+    
     @IBAction func onTappedBtnBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
